@@ -21,5 +21,10 @@ namespace ProyectoFormApellido
         {
             MessageBox.Show("Holaa, que tal ? Saludo desde el más allá :D, Jefferson Garcia");
         }
+
+        private void frmGarcia_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
