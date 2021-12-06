@@ -16,7 +16,7 @@ namespace ProyectoFormApellido
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmJaironCardena());
+            Application.Run(new frmMendoza());
         }
     }
 }
