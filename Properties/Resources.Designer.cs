@@ -69,5 +69,15 @@ namespace ProyectoFormApellido.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaper_full_hd_1080p_1920x1080 {
+            get {
+                object obj = ResourceManager.GetObject("wallpaper-full-hd-1080p-1920x1080", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

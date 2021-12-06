@@ -52,6 +52,12 @@
     <Compile Include="FrmBarrett.Designer.cs">
       <DependentUpon>FrmBarrett.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSantana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSantana.Designer.cs">
+      <DependentUpon>frmSantana.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmVACA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmBarrett.resx">
       <DependentUpon>FrmBarrett.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSantana.resx">
+      <DependentUpon>frmSantana.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVACA.resx">
       <DependentUpon>frmVACA.cs</DependentUpon>
@@ -91,6 +100,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fotonoticia_20210416104823_1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper-full-hd-1080p-1920x1080.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
