@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Diaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diaz.Designer.cs">
+      <DependentUpon>Diaz.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBarrett.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Diaz.resx">
+      <DependentUpon>Diaz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBarrett.resx">
       <DependentUpon>FrmBarrett.cs</DependentUpon>
     </EmbeddedResource>
