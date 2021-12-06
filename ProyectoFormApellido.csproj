@@ -71,6 +71,12 @@
     <Compile Include="FrmBarrett.Designer.cs">
       <DependentUpon>FrmBarrett.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmJaironCardena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJaironCardena.Designer.cs">
+      <DependentUpon>frmJaironCardena.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSantana.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBarrett.resx">
       <DependentUpon>FrmBarrett.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJaironCardena.resx">
+      <DependentUpon>frmJaironCardena.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSantana.resx">
       <DependentUpon>frmSantana.cs</DependentUpon>
