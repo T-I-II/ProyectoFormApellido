@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ProyectoFormApellido</RootNamespace>
     <AssemblyName>ProyectoFormApellido</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -137,6 +137,12 @@
     <Compile Include="frmzambrano.Designer.cs">
       <DependentUpon>frmzambrano.cs</DependentUpon>
     </Compile>
+    <Compile Include="matrices\frmMatrices_VACA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matrices\frmMatrices_VACA.Designer.cs">
+      <DependentUpon>frmMatrices_VACA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Diaz.resx">
@@ -184,6 +190,9 @@
     <EmbeddedResource Include="frmzambrano.resx">
       <DependentUpon>frmzambrano.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="matrices\frmMatrices_VACA.resx">
+      <DependentUpon>frmMatrices_VACA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -212,6 +221,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wallpaper-full-hd-1080p-1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-formulario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-350-985804.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
