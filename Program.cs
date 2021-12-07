@@ -16,7 +16,7 @@ namespace ProyectoFormApellido
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMendoza());
+            Application.Run(new FrmCervantes());
         }
     }
 }
