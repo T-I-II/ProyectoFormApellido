@@ -83,6 +83,12 @@
     <Compile Include="frmJaironCardena.Designer.cs">
       <DependentUpon>frmJaironCardena.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmJunco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJunco.Designer.cs">
+      <DependentUpon>FrmJunco.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMendoza.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmJaironCardena.resx">
       <DependentUpon>frmJaironCardena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJunco.resx">
+      <DependentUpon>FrmJunco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMendoza.resx">
       <DependentUpon>frmMendoza.cs</DependentUpon>
