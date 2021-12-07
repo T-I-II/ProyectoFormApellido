@@ -107,6 +107,12 @@
     <Compile Include="FrmJunco.Designer.cs">
       <DependentUpon>FrmJunco.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmJunco2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJunco2.Designer.cs">
+      <DependentUpon>FrmJunco2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMendoza.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmJunco.resx">
       <DependentUpon>FrmJunco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJunco2.resx">
+      <DependentUpon>FrmJunco2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMendoza.resx">
       <DependentUpon>frmMendoza.cs</DependentUpon>
