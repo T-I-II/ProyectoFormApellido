@@ -16,7 +16,7 @@ namespace ProyectoFormApellido
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCagua());
+            Application.Run(new matrices.frmJairon());
         }
     }
 }
