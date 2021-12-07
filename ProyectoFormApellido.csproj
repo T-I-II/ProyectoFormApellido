@@ -137,6 +137,12 @@
     <Compile Include="frmzambrano.Designer.cs">
       <DependentUpon>frmzambrano.cs</DependentUpon>
     </Compile>
+    <Compile Include="matrices\FrnDiaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matrices\FrnDiaz.Designer.cs">
+      <DependentUpon>FrnDiaz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Diaz.resx">
@@ -184,6 +190,9 @@
     <EmbeddedResource Include="frmzambrano.resx">
       <DependentUpon>frmzambrano.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="matrices\FrnDiaz.resx">
+      <DependentUpon>FrnDiaz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -213,5 +222,6 @@
   <ItemGroup>
     <None Include="Resources\wallpaper-full-hd-1080p-1920x1080.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
