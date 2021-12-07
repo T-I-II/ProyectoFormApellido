@@ -76,6 +76,7 @@ namespace ProyectoFormApellido.matrices
             m1[2] = new int[3];
             int columnas = int.Parse(this.txtcols1.Text);
             int i = 0, j = 0;
+            //HOLA
             for(int k=0; k<9; k++)
             {
                 m1[i][j] = int.Parse(matriz1[k].Text);
