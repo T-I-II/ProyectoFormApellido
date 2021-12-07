@@ -137,6 +137,12 @@
     <Compile Include="frmzambrano.Designer.cs">
       <DependentUpon>frmzambrano.cs</DependentUpon>
     </Compile>
+    <Compile Include="Matrices\frmCervantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matrices\frmCervantes.Designer.cs">
+      <DependentUpon>frmCervantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Diaz.resx">
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmzambrano.resx">
       <DependentUpon>frmzambrano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matrices\frmCervantes.resx">
+      <DependentUpon>frmCervantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
