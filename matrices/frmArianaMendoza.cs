@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoFormApellido.matrices
 {
-    public partial class frmJairon : Form
+    public partial class frmMendoza : Form
     {
         TextBox[] matriz1 = new TextBox[50];
         TextBox[] matriz2 = new TextBox[50];
-        public frmJairon()
+        public frmMendoza()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace ProyectoFormApellido.matrices
             for (int i = 0; i < (filas*columnas); i++)
             {
                 matriz1[i] = new TextBox();
-                matriz1[i].Text = " ";//(i +1).ToString();
+                matriz1[i].Text = (i +1).ToString();
                 matriz1[i].Width = 40;
                 matriz1[i].Location = new Point(x, y);
                 this.Controls.Add(matriz1[i]);
@@ -50,7 +50,7 @@ namespace ProyectoFormApellido.matrices
             for (int i = 0; i < (filas * columnas); i++)
             {
                 matriz2[i] = new TextBox();
-                matriz2[i].Text = " ";//(i + 1).ToString();
+                matriz2[i].Text = (i + 1).ToString();
                 matriz2[i].Width = 40;
                 matriz2[i].Location = new Point(x, y);
                 this.Controls.Add(matriz2[i]);

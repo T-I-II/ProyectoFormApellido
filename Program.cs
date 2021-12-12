@@ -16,7 +16,7 @@ namespace ProyectoFormApellido
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new matrices.frmJairon());
+            Application.Run(new matrices.frmMendoza());
         }
     }
 }

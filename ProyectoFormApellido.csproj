@@ -137,11 +137,11 @@
     <Compile Include="frmzambrano.Designer.cs">
       <DependentUpon>frmzambrano.cs</DependentUpon>
     </Compile>
-    <Compile Include="matrices\frmJairon.cs">
+    <Compile Include="matrices\frmArianaMendoza.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="matrices\frmJairon.Designer.cs">
-      <DependentUpon>frmJairon.cs</DependentUpon>
+    <Compile Include="matrices\frmArianaMendoza.Designer.cs">
+      <DependentUpon>frmArianaMendoza.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -190,8 +190,8 @@
     <EmbeddedResource Include="frmzambrano.resx">
       <DependentUpon>frmzambrano.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="matrices\frmJairon.resx">
-      <DependentUpon>frmJairon.cs</DependentUpon>
+    <EmbeddedResource Include="matrices\frmArianaMendoza.resx">
+      <DependentUpon>frmArianaMendoza.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

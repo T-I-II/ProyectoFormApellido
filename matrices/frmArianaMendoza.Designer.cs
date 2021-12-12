@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectoFormApellido.matrices
 {
-    partial class frmJairon
+    partial class frmMendoza
     {
         /// <summary>
         /// Required designer variable.
@@ -65,14 +65,14 @@ namespace ProyectoFormApellido.matrices
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(38, 25);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(293, 178);
+            this.groupBox1.Size = new System.Drawing.Size(229, 178);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Matriz  #1";
             // 
             // btnMatriz1
             // 
-            this.btnMatriz1.Location = new System.Drawing.Point(125, 138);
+            this.btnMatriz1.Location = new System.Drawing.Point(41, 103);
             this.btnMatriz1.Name = "btnMatriz1";
             this.btnMatriz1.Size = new System.Drawing.Size(75, 23);
             this.btnMatriz1.TabIndex = 5;
@@ -82,7 +82,7 @@ namespace ProyectoFormApellido.matrices
             // 
             // textColumnas1
             // 
-            this.textColumnas1.Location = new System.Drawing.Point(114, 63);
+            this.textColumnas1.Location = new System.Drawing.Point(66, 66);
             this.textColumnas1.Name = "textColumnas1";
             this.textColumnas1.Size = new System.Drawing.Size(100, 20);
             this.textColumnas1.TabIndex = 4;
@@ -90,7 +90,7 @@ namespace ProyectoFormApellido.matrices
             // 
             // textFilas1
             // 
-            this.textFilas1.Location = new System.Drawing.Point(114, 19);
+            this.textFilas1.Location = new System.Drawing.Point(56, 27);
             this.textFilas1.Name = "textFilas1";
             this.textFilas1.Size = new System.Drawing.Size(100, 20);
             this.textFilas1.TabIndex = 3;
@@ -99,7 +99,7 @@ namespace ProyectoFormApellido.matrices
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 66);
+            this.label3.Location = new System.Drawing.Point(7, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 2;
@@ -108,7 +108,7 @@ namespace ProyectoFormApellido.matrices
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 27);
+            this.label1.Location = new System.Drawing.Point(7, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 0;
@@ -121,16 +121,16 @@ namespace ProyectoFormApellido.matrices
             this.groupBox2.Controls.Add(this.textFilas2);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(419, 25);
+            this.groupBox2.Location = new System.Drawing.Point(568, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(298, 178);
+            this.groupBox2.Size = new System.Drawing.Size(220, 178);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Matriz  #2";
             // 
             // btnMatriz2
             // 
-            this.btnMatriz2.Location = new System.Drawing.Point(162, 138);
+            this.btnMatriz2.Location = new System.Drawing.Point(85, 116);
             this.btnMatriz2.Name = "btnMatriz2";
             this.btnMatriz2.Size = new System.Drawing.Size(75, 23);
             this.btnMatriz2.TabIndex = 7;
@@ -140,7 +140,7 @@ namespace ProyectoFormApellido.matrices
             // 
             // textColumnas2
             // 
-            this.textColumnas2.Location = new System.Drawing.Point(151, 66);
+            this.textColumnas2.Location = new System.Drawing.Point(114, 72);
             this.textColumnas2.Name = "textColumnas2";
             this.textColumnas2.Size = new System.Drawing.Size(100, 20);
             this.textColumnas2.TabIndex = 6;
@@ -148,7 +148,7 @@ namespace ProyectoFormApellido.matrices
             // 
             // textFilas2
             // 
-            this.textFilas2.Location = new System.Drawing.Point(151, 27);
+            this.textFilas2.Location = new System.Drawing.Point(114, 43);
             this.textFilas2.Name = "textFilas2";
             this.textFilas2.Size = new System.Drawing.Size(100, 20);
             this.textFilas2.TabIndex = 5;
@@ -157,7 +157,7 @@ namespace ProyectoFormApellido.matrices
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 66);
+            this.label4.Location = new System.Drawing.Point(23, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 3;
@@ -166,7 +166,7 @@ namespace ProyectoFormApellido.matrices
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 27);
+            this.label2.Location = new System.Drawing.Point(35, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 1;
@@ -174,7 +174,7 @@ namespace ProyectoFormApellido.matrices
             // 
             // btnMultiplicar
             // 
-            this.btnMultiplicar.Location = new System.Drawing.Point(325, 154);
+            this.btnMultiplicar.Location = new System.Drawing.Point(413, 52);
             this.btnMultiplicar.Name = "btnMultiplicar";
             this.btnMultiplicar.Size = new System.Drawing.Size(100, 49);
             this.btnMultiplicar.TabIndex = 2;
@@ -184,63 +184,63 @@ namespace ProyectoFormApellido.matrices
             // 
             // txtResul1
             // 
-            this.txtResul1.Location = new System.Drawing.Point(508, 275);
+            this.txtResul1.Location = new System.Drawing.Point(302, 130);
             this.txtResul1.Name = "txtResul1";
             this.txtResul1.Size = new System.Drawing.Size(37, 20);
             this.txtResul1.TabIndex = 3;
             // 
             // txtResul2
             // 
-            this.txtResul2.Location = new System.Drawing.Point(551, 275);
+            this.txtResul2.Location = new System.Drawing.Point(352, 131);
             this.txtResul2.Name = "txtResul2";
             this.txtResul2.Size = new System.Drawing.Size(37, 20);
             this.txtResul2.TabIndex = 4;
             // 
             // txtResul3
             // 
-            this.txtResul3.Location = new System.Drawing.Point(594, 275);
+            this.txtResul3.Location = new System.Drawing.Point(395, 131);
             this.txtResul3.Name = "txtResul3";
             this.txtResul3.Size = new System.Drawing.Size(37, 20);
             this.txtResul3.TabIndex = 5;
             // 
             // txtResul4
             // 
-            this.txtResul4.Location = new System.Drawing.Point(508, 310);
+            this.txtResul4.Location = new System.Drawing.Point(302, 156);
             this.txtResul4.Name = "txtResul4";
             this.txtResul4.Size = new System.Drawing.Size(37, 20);
             this.txtResul4.TabIndex = 6;
             // 
             // txtResul5
             // 
-            this.txtResul5.Location = new System.Drawing.Point(551, 310);
+            this.txtResul5.Location = new System.Drawing.Point(352, 157);
             this.txtResul5.Name = "txtResul5";
             this.txtResul5.Size = new System.Drawing.Size(37, 20);
             this.txtResul5.TabIndex = 7;
             // 
             // txtResul6
             // 
-            this.txtResul6.Location = new System.Drawing.Point(594, 310);
+            this.txtResul6.Location = new System.Drawing.Point(395, 156);
             this.txtResul6.Name = "txtResul6";
             this.txtResul6.Size = new System.Drawing.Size(37, 20);
             this.txtResul6.TabIndex = 8;
             // 
             // txtResul7
             // 
-            this.txtResul7.Location = new System.Drawing.Point(508, 346);
+            this.txtResul7.Location = new System.Drawing.Point(302, 183);
             this.txtResul7.Name = "txtResul7";
             this.txtResul7.Size = new System.Drawing.Size(37, 20);
             this.txtResul7.TabIndex = 9;
             // 
             // txtResul8
             // 
-            this.txtResul8.Location = new System.Drawing.Point(551, 346);
+            this.txtResul8.Location = new System.Drawing.Point(352, 183);
             this.txtResul8.Name = "txtResul8";
             this.txtResul8.Size = new System.Drawing.Size(37, 20);
             this.txtResul8.TabIndex = 10;
             // 
             // txtResul9
             // 
-            this.txtResul9.Location = new System.Drawing.Point(594, 346);
+            this.txtResul9.Location = new System.Drawing.Point(395, 182);
             this.txtResul9.Name = "txtResul9";
             this.txtResul9.Size = new System.Drawing.Size(37, 20);
             this.txtResul9.TabIndex = 11;
@@ -249,13 +249,13 @@ namespace ProyectoFormApellido.matrices
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(459, 256);
+            this.label5.Location = new System.Drawing.Point(299, 95);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(225, 16);
+            this.label5.Size = new System.Drawing.Size(91, 16);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Resultados de la multiplicacion";
+            this.label5.Text = "Resultados ";
             // 
-            // frmJairon
+            // frmMendoza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -273,8 +273,8 @@ namespace ProyectoFormApellido.matrices
             this.Controls.Add(this.btnMultiplicar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmJairon";
-            this.Text = "frmJairon";
+            this.Name = "frmMendoza";
+            this.Text = "frmMendoza";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
