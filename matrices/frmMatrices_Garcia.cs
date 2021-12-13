@@ -12,7 +12,10 @@ namespace ProyectoFormApellido.matrices
 {
     public partial class frmMatrices_Garcia : Form
     {
-        TextBox[] matriz1 = new TextBox[50];
+
+       private int[,] m1;
+       private int[,] m2;
+        private int[,] resp;
         public frmMatrices_Garcia()
         {
             InitializeComponent();
@@ -27,26 +30,34 @@ namespace ProyectoFormApellido.matrices
         {
             // creación de controles en tiempo de ejecución
 
-            int[] m1 = new int[40];
+          
             int filas = int.Parse(this.txtFilas1.Text);
             int cols = int.Parse(this.txtCols1.Text);
-            int x = 55;
+            this.m1 = new int[filas, cols];
+
+
+            int x = 100;
             int y = 225;
-            int mutl = filas * cols;
-            for (int i= 0; i<(mutl); i++)
+
+            int count = 1;
+
+            for (int filasaux= 0; filasaux < filas; filasaux++)
             {
-                matriz1[i] = new TextBox();
-                matriz1[i].Text = (i + 1).ToString();
-                matriz1[i].Width = 40; //ancho del control
-                matriz1[i].Location = new Point(x, y); //posición del control
-                this.Controls.Add(matriz1[i]);
-                x += 50;
-                if ((i + 1) % cols == 0)
+                for (int columnasaux = 0; columnasaux < cols; columnasaux++)
                 {
-                    y += 23;
-                    x = 55;
+                    TextBox aux = new TextBox();
+                    this.m1[filasaux,columnasaux] = count++;
+                    aux.Width = 40; //ancho del control
+                    aux.Text = this.m1[filasaux, columnasaux].ToString();
+                    aux.Location = new Point(x, y); //posición del control
+                    this.Controls.Add(aux);
+                    x = x + (aux.Width + 3);
                 }
+                y = y + 30;
+                x = 100;
             }
+
+        
 
            
 
@@ -54,59 +65,83 @@ namespace ProyectoFormApellido.matrices
 
         private void btnMatriz2_Click(object sender, EventArgs e)
         {
-            TextBox[] matriz2 = new TextBox[50];
-            int[] m2 = new int[40];
-            int filas2 = int.Parse(this.txtFilas2.Text);
-            int cols2 = int.Parse(this.txtCols2.Text);
-            int x2 = 450;
-            int y2 = 225;
-            int mutl2 = filas2 * cols2;
-            for (int i = 0; i < (mutl2); i++)
+          
+
+            int filas = int.Parse(this.txtFilas2.Text);
+            int cols = int.Parse(this.txtCols2.Text);
+            this.m2 = new int[filas, cols];
+
+
+            int x = 480;
+            int y = 225;
+
+            int count = 1;
+
+            for (int filasaux = 0; filasaux < filas; filasaux++)
             {
-                matriz2[i] = new TextBox();
-                matriz2[i].Text = (i + 1).ToString();
-                matriz2[i].Width = 40; //ancho del control
-                matriz2[i].Location = new Point(x2, y2); //posición del control
-                this.Controls.Add(matriz2[i]);
-                x2 += 50;
-                if ((i + 1) % cols2 == 0)
+                for (int columnasaux = 0; columnasaux < cols; columnasaux++)
                 {
-                    y2 += 23;
-                    x2 = 150;
+                    TextBox aux = new TextBox();
+                    this.m2[filasaux, columnasaux] = count++;
+                    aux.Width = 40; //ancho del control
+                    aux.Text = this.m2[filasaux, columnasaux].ToString();
+                    aux.Location = new Point(x, y); //posición del control
+                    this.Controls.Add(aux);
+                    x = x + (aux.Width + 3);
                 }
+                y = y + 30;
+                x = 480;
             }
         }
 
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
-            //se asume una matriz de 3 x 3
-            int[][] m1 = new int[3][];
-            m1[0] = new int[3];
-            m1[1] = new int[3];
-            m1[2] = new int[3];
+            int filas1 = int.Parse(this.txtFilas1.Text);
+            int cols1 = int.Parse(this.txtCols1.Text);
+            int filas2 = int.Parse(this.txtFilas2.Text);
+            int cols2 = int.Parse(this.txtCols2.Text);
 
-            //pasa los elementos de la matriz1 a la matriz de enteros m1
-            int cols = int.Parse(this.txtCols1.Text);
-            int i = 0, j = 0;
-            for(int k=0; k<9; k++)
+
+            int x = 290;
+            int y = 300;
+
+
+            if (filas2 == cols1)
             {
-                m1[i][j] = int.Parse(matriz1[k].Text);
-                j++;
-                if ((k + 1) % cols == 0)
+                this.resp = new int[filas1, cols2];
+
+                for (int filasaux = 0; filasaux < filas1; filasaux++)
                 {
-                    i++;
-                    j = 0;
+                    for (int columnasaux = 0; columnasaux < cols2; columnasaux++)
+                    {
+                        int suma = 0;
+
+                        for (int filas2aux = 0; filas2aux < filas2; filas2aux++)
+                        {
+
+                            suma = suma + (this.m1[filasaux, filas2aux] * this.m2[filas2aux, columnasaux]);
+
+                        }
+
+                        TextBox aux = new TextBox();
+                        this.resp[filasaux, columnasaux] = suma;
+                        aux.Width = 40; //ancho del control
+                        aux.Text = this.resp[filasaux, columnasaux].ToString();
+                        aux.Location = new Point(x, y); //posición del control
+                        this.Controls.Add(aux);
+                        x = x + (aux.Width + 3);
+
+                    }
+                    y = y + 30;
+                    x = 290;
                 }
+
+
+
             }
-
-            //imprime la matriz m1
-            for(i=0; i<3; i++)
+            else
             {
-                for(j=0; i<3; i++)
-                {
-                    Console.WriteLine($"{m1[i][j]}");
-                }
-                Console.WriteLine();
+                MessageBox.Show("No cumple, los requisitos para multiplicar");
             }
         }
     }
