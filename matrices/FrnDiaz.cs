@@ -30,7 +30,7 @@ namespace ProyectoFormApellido.matrices
             for (int i = 0; i < (filas * cols); i++)
             {
                 matriz1[i] = new TextBox();
-                matriz1[i].Text = i.ToString();
+                matriz1[i].Text = (i+1).ToString();
                 matriz1[i].Width = 40; //ancho de control
                 matriz1[i].Location = new Point(x, y);//posicion del control
                 this.Controls.Add(matriz1[i]); //mostrar el control
@@ -55,7 +55,7 @@ namespace ProyectoFormApellido.matrices
             for (int i = 0; i < (filas * cols); i++)
             {
                 matriz1[i] = new TextBox();
-                matriz1[i].Text = "0";
+                matriz1[i].Text = (i + 1).ToString();
                 matriz1[i].Width = 40; //ancho de control
                 matriz1[i].Location = new Point(x, y);//posicion del control
                 this.Controls.Add(matriz1[i]); //mostrar el control
@@ -81,7 +81,6 @@ namespace ProyectoFormApellido.matrices
             int columnas = int.Parse(this.txtcols1.Text);
             int columnas2 = int.Parse(this.txtcls2.Text);
             int i = 0, j = 0;
-            //HOLA
             for(int k=0; k<9; k++)
             {
                 m1[i][j] = int.Parse(matriz1[k].Text);
@@ -96,9 +95,9 @@ namespace ProyectoFormApellido.matrices
             {
                 for(j=0; j<3; j++)
                 {
-                    Console.Write($"{m1[i][j]}");
+                    //Console.Write($"{m1[i][j]}");
                 }
-                Console.WriteLine();
+                //Console.WriteLine();
             }
             int a = 0, b = 0;
             for (int l = 0; l < 9; l++)
@@ -115,11 +114,11 @@ namespace ProyectoFormApellido.matrices
             {
                 for (b = 0; b < 3; b++)
                 {
-                    Console.Write($"{m2[0][0]}");
+                    //Console.Write($"{m2[0][0]}");
                 }
-                Console.WriteLine();
+                //Console.WriteLine();
             }
-            Console.Write($"{m1[0][0] * m2[0][0]}");
+            //Console.Write($"{m1[0][0] * m2[0][0]}");
             int resul1 = (m1[0][0] * m2[0][0]) + (m1[0][01] * m2[1][0]) + (m1[0][02] * m2[2][0]);
             this.textBox1.Text = resul1.ToString();
             int resul2 = (m1[0][0] * m2[0][1]) + (m1[0][01] * m2[01][1]) + (m1[0][02] * m2[2][1]);
