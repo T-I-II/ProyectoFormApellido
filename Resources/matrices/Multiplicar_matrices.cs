@@ -86,35 +86,11 @@ namespace ProyectoFormApellido.Resources.matrices
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int[][] m1 = new int[3][];
-            m1[0] = new int[3];
-            m1[1] = new int[3];
-            m1[2] = new int[3];
 
-            //pasa los elementos del matriz1 a la matriz de los enteros m1
-            int columas = int.Parse(this.Columna1.Text);
-            int i = 0, j = 0;
-            for (int x1 = 0; x1 < 9; x1++)
-            {
-                m1[i][j] = int.Parse(matriz1[x1].Text);
-                j++;
-                if ((x1 + 1) % columas == 0)
-                {
-                    i++;
-                    j = 0;
-                }
+        }
 
-
-            }
-            //imprimiar
-            for (i = 0; i < 3; i++)
-            {
-                for (j = 0; j < 3; j++)
-                {
-                    Console.Write($"{m1[i][j]}");
-                }
-                Console.WriteLine();
-            }
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }
