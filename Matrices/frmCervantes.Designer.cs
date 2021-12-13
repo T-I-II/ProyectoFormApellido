@@ -42,8 +42,10 @@ namespace ProyectoFormApellido.Matrices
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnMultiplicador = new System.Windows.Forms.Button();
+            this.Resultado = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Resultado)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -55,14 +57,14 @@ namespace ProyectoFormApellido.Matrices
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 23);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(322, 177);
+            this.groupBox1.Size = new System.Drawing.Size(298, 163);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Matriz #1";
             // 
             // btnMatriz1
             // 
-            this.btnMatriz1.Location = new System.Drawing.Point(103, 127);
+            this.btnMatriz1.Location = new System.Drawing.Point(103, 113);
             this.btnMatriz1.Name = "btnMatriz1";
             this.btnMatriz1.Size = new System.Drawing.Size(100, 44);
             this.btnMatriz1.TabIndex = 4;
@@ -112,14 +114,14 @@ namespace ProyectoFormApellido.Matrices
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Location = new System.Drawing.Point(387, 23);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(353, 177);
+            this.groupBox2.Size = new System.Drawing.Size(316, 157);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Matriz #2";
             // 
             // btnMatriz2
             // 
-            this.btnMatriz2.Location = new System.Drawing.Point(143, 127);
+            this.btnMatriz2.Location = new System.Drawing.Point(143, 113);
             this.btnMatriz2.Name = "btnMatriz2";
             this.btnMatriz2.Size = new System.Drawing.Size(109, 36);
             this.btnMatriz2.TabIndex = 4;
@@ -161,7 +163,7 @@ namespace ProyectoFormApellido.Matrices
             // 
             // btnMultiplicador
             // 
-            this.btnMultiplicador.Location = new System.Drawing.Point(588, 267);
+            this.btnMultiplicador.Location = new System.Drawing.Point(301, 192);
             this.btnMultiplicador.Name = "btnMultiplicador";
             this.btnMultiplicador.Size = new System.Drawing.Size(134, 59);
             this.btnMultiplicador.TabIndex = 2;
@@ -169,11 +171,21 @@ namespace ProyectoFormApellido.Matrices
             this.btnMultiplicador.UseVisualStyleBackColor = true;
             this.btnMultiplicador.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Resultado
+            // 
+            this.Resultado.AllowUserToOrderColumns = true;
+            this.Resultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Resultado.Location = new System.Drawing.Point(576, 315);
+            this.Resultado.Name = "Resultado";
+            this.Resultado.Size = new System.Drawing.Size(212, 123);
+            this.Resultado.TabIndex = 3;
+            // 
             // frmCervantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Resultado);
             this.Controls.Add(this.btnMultiplicador);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -183,6 +195,7 @@ namespace ProyectoFormApellido.Matrices
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Resultado)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -202,5 +215,6 @@ namespace ProyectoFormApellido.Matrices
         private System.Windows.Forms.TextBox txtcolumna2;
         private System.Windows.Forms.TextBox txtfila2;
         private System.Windows.Forms.Button btnMultiplicador;
+        private System.Windows.Forms.DataGridView Resultado;
     }
 }
