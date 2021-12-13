@@ -13,6 +13,7 @@ namespace ProyectoFormApellido.Matrices_Cagua
     public partial class frmaMatrices_Cagua : Form
     {
         TextBox[] matriz1 = new TextBox[50];
+        TextBox[] matriz2 = new TextBox[50];
         public frmaMatrices_Cagua()
         {
             InitializeComponent();
@@ -25,62 +26,128 @@ namespace ProyectoFormApellido.Matrices_Cagua
 
         private void btnMatriz2_Click(object sender, EventArgs e)
         {
-            
+            //crear controles de tiempo de ejecucion c 
+            int filas = int.Parse(this.txtFilas2.Text);
+            int cols = int.Parse(this.txtCols2.Text);
+            int i = 380;
+            int y = 300;
+            for (int x = 0; x < (filas * cols); x++)
+            {
+                matriz2[x] = new TextBox();
+                matriz2[x].Text = "0";
+                matriz2[x].Width = 40;
+                matriz2[x].Location = new Point(i, y);
+                this.Controls.Add(matriz2[x]);//mostrar
+                i += 42;
+
+                if ((x + 1) % cols == 0)
+                {
+                    y += 30;
+                    i = 380;
+                }
+            }
         }
 
         private void btnMatriz1_Click(object sender, EventArgs e)
         {
-            //creacion de controles en tiempo de ejecucion
-            
+            // cracion de controles en tiempo de ejecutacion
+
             int filas = int.Parse(this.txtFilas1.Text);
             int cols = int.Parse(this.txtCols1.Text);
-            int x = 35, y = 250;
-            for(int i=0; i<9; i++)
+            int x = 50, y = 280;
+            for (int i = 0; i < (filas * cols); i++)
             {
-                matriz1[0] = new TextBox();
-                matriz1[0].Text = "0";
-                matriz1[0].Width = 40; //ancho del control
-                matriz1[0].Location = new Point(x, y);//posicion del control
-                this.Controls.Add(matriz1[0]);//mostrar el control
+                matriz1[i] = new TextBox();
+                matriz1[i].Text = i.ToString();
+                matriz1[i].Width = 40;
+                matriz1[i].Location = new Point(x, y);
+                this.Controls.Add(matriz1[i]);
                 x += 42;
-                if ((i+1)% cols ==0)
+                if ((i + 1) % cols == 0)
                 {
                     y += 30;
-                    x -= 126;
+                    x = 50;
                 }
 
             }
-
-            
         }
 
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
-            //se suma unamatriz de 3x3
             int[][] m1 = new int[3][];
             m1[0] = new int[3];
             m1[1] = new int[3];
             m1[2] = new int[3];
+            int[][] m2 = new int[3][];
+            m2[0] = new int[3];
+            m2[1] = new int[3];
+            m2[2] = new int[3];
+            int columnas1 = int.Parse(this.txtCols1.Text);
+            int columnas2 = int.Parse(this.txtCols2.Text);
             int i = 0, j = 0;
-            for(int k=0;  k<9; k++)
+            for (int k = 0; k < 9; k++)
             {
                 m1[i][j] = int.Parse(matriz1[k].Text);
                 j++;
-                if ((k+1)% Cols1 ==0)
+                if ((k + 1) % columnas1 == 0)
                 {
                     i++;
                     j = 0;
                 }
             }
-
-            //imprime la matriz m1
-            for(i=0; i<3; i++)
+            for (i = 0; i < 3; i++)
             {
-                for(j=0; j<3; j++)
+                for (j = 0; j < 3; j++)
                 {
-                    Console.Write($"{m1[i][j]}");
+                    //Console.Write($"{m1[1][1]}"); 
                 }
-                Console.WriteLine();            }
+                //Console.WriteLine();
+            }
+            int a = 0, b = 0;
+            for (int l = 0; l < 9; l++)
+            {
+                m2[a][b] = int.Parse(matriz2[l].Text);
+                b++;
+                if ((l + 1) % columnas2 == 0)
+                {
+                    a++;
+                    b = 0;
+                }
+            }
+            for (a = 0; a < 3; a++)
+            {
+                for (b = 0; b < 3; b++)
+                {
+                    //Console.Write($"{m2[0][0]}");
+                }
+                //Console.WriteLine();
+            }
+            int resul1 = (m1[0][0] * m2[0][0]) + (m1[0][01] * m2[1][0]) + (m1[0][02] * m2[2][0]);
+            this.txtResultado1.Text = resul1.ToString();
+            int resul2 = (m1[0][0] * m2[0][1]) + (m1[0][01] * m2[01][1]) + (m1[0][02] * m2[2][1]);
+            this.txtResultado2.Text = resul2.ToString();
+            int resul3 = (m1[0][0] * m2[0][2]) + (m1[0][1] * m2[01][2]) + (m1[0][2] * m2[02][2]);
+            this.txtResultado3.Text = resul3.ToString();
+            int resul4 = (m1[01][00] * m2[0][0]) + (m1[01][01] * m2[01][0]) + (m1[01][02] * m2[02][0]);
+            this.txtResultado4.Text = resul4.ToString();
+            int resul5 = (m1[01][00] * m2[0][1]) + (m1[01][01] * m2[01][1]) + (m1[01][02] * m2[02][1]);
+            this.txtResultado5.Text = resul5.ToString();
+            int resul6 = (m1[01][00] * m2[0][2]) + (m1[01][01] * m2[01][2]) + (m1[01][02] * m2[02][2]);
+            this.txtResultado6.Text = resul6.ToString();
+            int resul7 = (m1[02][00] * m2[0][0]) + (m1[02][01] * m2[01][0]) + (m1[02][02] * m2[02][0]);
+            this.txtResultado7.Text = resul7.ToString();
+            int resul8 = (m1[02][00] * m2[0][1]) + (m1[02][01] * m2[01][1]) + (m1[02][02] * m2[02][1]);
+            this.txtResultado8.Text = resul8.ToString();
+            int resul9 = (m1[02][00] * m2[0][2]) + (m1[02][01] * m2[01][2]) + (m1[02][02] * m2[02][2]);
+            this.txtResultado9.Text = resul9.ToString();
+
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
+    
 }
